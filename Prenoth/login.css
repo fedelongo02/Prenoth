@@ -1,0 +1,41 @@
+.login-container {
+    width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.registrati {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accedi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.insert {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Aggiunto per assicurare che il padding non aumenti la larghezza totale */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #F9F8F5; /* Bianco seta */
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #F1EADD; /* Crema */
+    color: #2C2C2C; /* Nero fumo */
+}

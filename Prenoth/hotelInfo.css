@@ -1,0 +1,209 @@
+.bodyInfo {
+    width: 100%;           /* Prende lo spazio disponibile... */
+    max-width: 1060px;
+    margin: 20px auto;        /* Centra il div nella pagina */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box; /* Importante: include padding nel calcolo della larghezza */
+    background-color: #F9F8F5; /* Bianco seta */
+    border-radius: 30px;
+}
+
+.bodyInfo h2{
+    margin: 0;
+    color: #2C2C2C; /* Nero fumo */
+    font-size: 30px;
+    padding: 0; /* Rimuove il padding predefinito */
+}
+
+.hotel-image-info {
+    width: 500px;           /* Sarà il 100% di 500px (quindi 500px) */
+    height: 300px;
+    object-fit: cover;     /* Fondamentale: evita che l'immagine si deformi */
+    border-radius: 15px;
+}
+
+.info {
+    text-align: left;
+    padding: 20px;
+}
+
+.room-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permette alle card di andare a capo se lo spazio è insufficiente */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-room {
+    width: 300px;
+    background-color: #F9F8F5; /* Bianco seta */
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 5px solid #2C2C2C;
+}
+
+.btn-prenota {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: white;
+    text-decoration: none; /* Rimuove la sottolineatura del link */
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-prenota:hover {
+    color: #2C2C2C; /* Nero fumo */
+    background-color: #F1EADD; /* Scurisce al passaggio del mouse */
+}
+
+.recensioni {
+    width: 1060px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.recensioni h2 {
+    margin: 0;
+    text-align: left;
+    color: #2C2C2C; /* Nero fumo */
+    font-size: 30px;
+}
+
+.redirect{
+    background-color: #F9F8F5; /* Bianco seta */
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 5px solid #2C2C2C; /* Nero fumo */
+    border-left: 5px solid #2C2C2C; /* Nero fumo */
+}
+
+.recensioni-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-recensione {
+    background-color: #F9F8F5; /* Bianco seta */
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 5px solid #2C2C2C; /* Nero fumo */
+}
+
+.form-recensione {
+    background-color: #F9F8F5; /* Bianco seta */
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 5px solid #2C2C2C; /* Nero fumo */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}   
+
+/* Contenitore stelle */
+.rating-stars {
+    display: flex;
+    flex-direction: row-reverse; /* Inverte l'ordine visivo */
+    justify-content: flex-end;
+}
+
+/* Nascondi i radio button reali */
+.rating-stars input {
+    display: none;
+}
+
+/* Stile base delle stelle (vuote) */
+.rating-stars label {
+    font-size: 25px;
+    color: lightgrey;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+/* Effetto Hover e Selezione: colora la stella e tutte quelle precedenti */
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+    color: #2C2C2C; /* Nero fumo */
+}
+
+/* Opzionale: textarea più moderna */
+textarea {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;;
+}
+
+.prenota-container {
+    width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.prenota-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #f9f8f5; /* Bianco seta */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prenota-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.prenota-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.prenota-container form input[type="date"],
+.prenota-container form input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.prenota-container form input[type="submit"] {
+    border: none;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #F9F8F5; /* Bianco seta */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prenota-container form input[type="submit"]:hover {
+    background-color: #F1EADD; /* Crema */
+    color: #2C2C2C; /* Nero fumo */
+}
+

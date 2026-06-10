@@ -1,0 +1,98 @@
+.profilo-info {
+    width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.profilo-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #f9f8f5; /* Bianco seta */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profilo-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.prenotazioni-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-prenotazione {
+    width: 193px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.card-prenotazione h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #f9f8f5; /* Bianco seta */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-prenotazione p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.preferiti-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-preferito {
+    width: 193px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.card-preferito h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #f9f8f5; /* Bianco seta */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-preferito p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-info {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2C2C2C; /* Nero fumo */
+    color: #F9F8F5; /* Bianco seta */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #F1EADD; /* Crema */
+    color: #2C2C2C; /* Nero fumo */
+}

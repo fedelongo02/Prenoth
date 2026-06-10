@@ -1,0 +1,51 @@
+/* stile per la pagina principale */
+h2{
+    margin: 0 auto;
+    color: #2C2C2C; /* Nero fumo */
+    max-width: 1300px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permette alle card di andare a capo se lo spazio è insufficiente */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width: 260px;
+    padding: 20px;
+
+    border-left: 5px solid #2C2C2C; /* Nero fumo */
+    border-radius: 10px;
+    background-color: #F9F8F5; /* Bianco seta */
+}
+
+.card h3{
+    margin: 0;
+}
+
+.card p{
+    color: #2C2C2C; /* Nero fumo */
+}
+
+.card a{
+    margin-top: auto; /* Spinge il link verso il basso */
+    text-decoration: none;
+    color: #2C2C2C; /* Nero fumo */
+    font-weight: bold;
+}
+
+.hotel-image{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
