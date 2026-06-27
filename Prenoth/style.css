@@ -108,3 +108,53 @@ h1{
     padding: 20px;
     color: #F9F8F5; /* Bianco seta */
 }
+
+
+
+@media (max-width: 768px) {
+    
+    /* 1. Gestione dei margini della sezione di ricerca */
+    .navsearch form {
+        margin-top: 40px; /* Ridotto lo spazio superiore per non far scorrere troppo in basso la pagina */
+        padding: 10px;
+    }
+
+    /* 2. Dispone gli input di ricerca in verticale invece che affiancati */
+    .navInput {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px; /* Evita che gli input diventino giganti */
+        margin-top: 10px;
+    }
+
+    .navInput input, #searchButton {
+        width: 100%; /* Gli input occupano tutta la larghezza del loro contenitore */
+        box-sizing: border-box;
+    }
+
+    /* 3. Gestione del menu di navigazione */
+    .navList {
+        margin-top: 40px; /* Ridotto lo spazio per il mobile */
+        padding: 5px;
+    }
+
+    /* Trasforma i link da orizzontali a una lista verticale pulita */
+    .navList ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px; /* Spazio verticale tra i vari pulsanti */
+        align-items: center;
+    }
+
+    .navList li {
+        width: 100%;
+        max-width: 250px; /* Larghezza massima per i pulsanti del menu */
+        padding: 0;
+    }
+
+    .navList .nav-link {
+        display: block; /* Rende l'intero pulsante cliccabile su tutta la larghezza */
+        text-align: center;
+        padding: 12px 20px; /* Padding leggermente ridotto per mobile */
+    }
+}
