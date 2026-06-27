@@ -207,3 +207,61 @@ textarea {
     color: #2C2C2C; /* Nero fumo */
 }
 
+
+
+@media (max-width: 768px) {
+
+    /* 1. Sezione Info Hotel (Immagine + Testo) */
+    .bodyInfo {
+        flex-direction: column; /* Incolonna l'immagine e il testo */
+        align-items: center;
+        border-radius: 15px; /* Arrotondamento ridotto per schermi piccoli */
+        padding: 15px;
+    }
+
+    .hotel-image-info {
+        width: 100%; /* L'immagine prende tutta la larghezza del telefono */
+        height: 220px; /* Altezza ridotta per non occupare tutto lo schermo */
+    }
+
+    .info {
+        padding: 10px 0 0 0; /* Rimuove il padding laterale superfluo */
+    }
+
+    .bodyInfo h2 {
+        font-size: 24px; /* Titolo leggermente più piccolo */
+    }
+
+    /* 2. Camere (Card Room) */
+    .card-room {
+        width: 100%; /* La card della camera si adatta allo schermo */
+        max-width: 340px;
+        box-sizing: border-box;
+    }
+
+    .btn-prenota {
+        display: block; /* Il pulsante diventa grande e facile da cliccare */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 3. Sezione Recensioni */
+    .recensioni {
+        width: 100%; /* Sovrascrive i 1060px fissi */
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .recensioni h2 {
+        font-size: 24px;
+    }
+
+    /* 4. Form e Schermata di Prenotazione */
+    .prenota-container {
+        width: 100%; /* Sovrascrive i 600px fissi */
+        max-width: 100%;
+        margin: 40px auto; /* Ridotto il margine verticale esagerato */
+        box-sizing: border-box;
+    }
+}
