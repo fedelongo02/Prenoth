@@ -49,3 +49,28 @@ h2{
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
+
+@media (max-width: 768px) {
+
+    /* 1. Riduce il titolo per farlo stare su una riga senza spezzarsi male */
+    h2 {
+        font-size: 28px;
+        padding-left: 20px; /* Allinea il titolo al margine delle card */
+        padding-right: 20px;
+    }
+
+    /* 2. Centra il contenitore delle card sul telefono */
+    .container {
+        justify-content: center; /* Centra le card se avanzano spazi ai lati */
+        gap: 15px; /* Riduce leggermente lo spazio tra le card */
+        padding: 15px;
+    }
+
+    /* 3. Rende le card fluide sui display piccoli */
+    .card {
+        width: 100%; /* La card occupa tutta la larghezza disponibile */
+        max-width: 340px; /* Impedisce che diventi troppo larga sui telefoni grandi */
+        box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza */
+    }
+}
