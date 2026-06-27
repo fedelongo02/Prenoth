@@ -96,3 +96,35 @@
     background-color: #F1EADD; /* Crema */
     color: #2C2C2C; /* Nero fumo */
 }
+
+
+@media (max-width: 768px) {
+
+    /* 1. Rende il contenitore del profilo fluido */
+    .profilo-info {
+        width: 100%; /* Sovrascrive i 700px fissi */
+        max-width: 100%;
+        margin: 40px auto; /* Riduce lo spazio sopra e sotto */
+        box-sizing: border-box;
+    }
+
+    /* 2. Centra le liste di card su mobile */
+    .prenotazioni-container, 
+    .preferiti-container {
+        justify-content: center;
+    }
+
+    /* 3. Rende le card più grandi e leggibili sui display piccoli */
+    .card-prenotazione, 
+    .card-preferito {
+        width: 100%; /* Sgancia i 193px fissi per adattarsi al telefono */
+        max-width: 280px; /* Impedisce che diventino troppo larghe */
+        box-sizing: border-box;
+    }
+
+    /* 4. Adatta il pulsante delle info a tutta larghezza */
+    .btn-info {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
