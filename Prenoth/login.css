@@ -39,3 +39,22 @@
     background-color: #F1EADD; /* Crema */
     color: #2C2C2C; /* Nero fumo */
 }
+
+
+
+@media (max-width: 768px) {
+
+    /* 1. Rende il box di login fluido e azzera i margini esagerati */
+    .login-container {
+        width: 100%; /* Sovrascrive i 600px fissi */
+        max-width: 100%;
+        margin: 40px auto; /* Riduce lo spazio sopra e sotto */
+        box-sizing: border-box;
+    }
+
+    /* 2. Ottimizza gli input e i pulsanti per il touch */
+    .insert, .submit {
+        font-size: 16px;
+        padding: 12px; /* Leggermente più alti per facilitare il clic con le dita */
+    }
+}
